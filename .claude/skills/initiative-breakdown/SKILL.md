@@ -5,7 +5,7 @@ description: Break an initiative into an ordered product spec backlog with depen
 
 # Breakdown Initiative
 
-Read an initiative brief and break it into an ordered backlog of recommended product specs. Each product spec is scoped as a vertical slice of work that a PM can flesh out with `/product-spec-create`. The ordering follows critical path logic: dependency-unblocked first, then highest impact, then lowest risk.
+Read an initiative brief and break it into an ordered backlog of recommended product specs. Each product spec is scoped as a vertical slice of work that a PM can flesh out with `/create-product-spec`. The ordering follows critical path logic: dependency-unblocked first, then highest impact, then lowest risk.
 
 Your role here is **acting tech lead** — you're the person who reads the business goals, understands the technical landscape, and figures out how to sequence the work so a small team can ship incrementally with the most value delivered earliest.
 
@@ -16,7 +16,7 @@ Read all of these before asking any questions. You need the full picture.
 ### Initiative brief
 Look for the initiative doc:
 1. `docs/initiatives/` directory — find the relevant file
-2. If no initiative doc exists, ask the user to paste it or run `/initiative-import` first
+2. If no initiative doc exists, ask the user to paste it or run `/create-initiative` first
 
 ### Codebase exploration
 Explore the codebase to understand:
@@ -155,7 +155,7 @@ Use this template:
 
 **Automation opportunity:** <specific notes>
 
-**Next step:** Run `/product-spec-create` to flesh this out
+**Next step:** Run `/create-product-spec` to flesh this out
 
 ---
 
@@ -168,5 +168,5 @@ Use this template:
 
 After writing, tell the user:
 - The file path
-- Suggest running `/product-spec-create` for the first product spec in the backlog
+- Suggest running `/create-product-spec` for the first product spec in the backlog
 - Remind them that `/standup` can capture scope changes back into this doc as work progresses

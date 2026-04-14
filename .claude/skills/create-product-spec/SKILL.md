@@ -1,6 +1,6 @@
 ---
-name: product-spec-create
-description: Create a product spec — a lightweight product requirements document for a feature. Use when a PM or engineer wants to write up a feature, create a product spec, spec out a feature, write requirements, or says "product spec create", "create a product spec", "new product spec", "write a spec", "feature spec", "create a PRD", or "I need to spec out X". Generates an interactive, structured product spec in docs/prds/.
+name: create-product-spec
+description: Create a product spec — a lightweight product requirements document for a feature. Use when a PM or engineer wants to write up a feature, create a product spec, spec out a feature, write requirements, or says "create product spec", "create a product spec", "new product spec", "write a spec", "feature spec", "create a PRD", or "I need to spec out X". Generates an interactive, structured product spec in docs/prds/.
 ---
 
 # Create Product Spec

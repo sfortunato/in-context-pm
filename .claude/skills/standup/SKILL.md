@@ -55,7 +55,7 @@ Use AskUserQuestion for each proposed update:
 - "Should I apply this change to `<file>`?"
 - Options: Apply, Skip, Edit (let me rephrase)
 
-If a decision doesn't map to any existing doc, note it: "This decision doesn't match any existing product spec or initiative doc. Consider capturing it when you next run `/product-spec-create` or `/initiative-breakdown`."
+If a decision doesn't map to any existing doc, note it: "This decision doesn't match any existing product spec or initiative doc. Consider capturing it when you next run `/create-product-spec` or `/initiative-breakdown`."
 
 ## Phase 4: Apply
 
@@ -73,5 +73,5 @@ If blockers or action items were extracted but don't map to doc changes, list th
 - **Be conservative.** Only propose doc updates for clear decisions and scope changes. Status updates ("I'm working on X") are not doc changes.
 - **Be surgical.** Edit the specific paragraph or bullet that's affected. Don't restructure documents.
 - **Respect #QUESTION callouts.** If a decision resolves an existing `#QUESTION` in a product spec, propose removing the callout and replacing it with the decided answer.
-- **Don't create new docs.** This skill updates existing planning docs. If the user needs a new product spec, point them to `/product-spec-create`.
+- **Don't create new docs.** This skill updates existing planning docs. If the user needs a new product spec, point them to `/create-product-spec`.
 - **Handle sensitive info carefully.** Meeting notes may contain names, IDs, or sensitive information. Never write sensitive data into planning docs. If you detect potential sensitive info in the notes, flag it and exclude it from any proposed doc updates.

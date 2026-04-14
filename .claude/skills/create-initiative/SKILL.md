@@ -1,9 +1,9 @@
 ---
-name: initiative-import
-description: Import an initiative brief into the project through an interactive interview. Use when the user says "import initiative", "initiative import", "add initiative", "paste initiative brief", or wants to bring an initiative brief into the repo.
+name: create-initiative
+description: Create an initiative doc by importing a brief through an interactive interview. Use when the user says "create initiative", "new initiative", "add initiative", "import initiative", "paste initiative brief", or wants to bring an initiative brief into the repo.
 ---
 
-# Import Initiative
+# Create Initiative
 
 Import an initiative brief into `docs/initiatives/<slug>.md` through an interactive interview.
 
@@ -36,7 +36,7 @@ Accept either:
 - A file path (from `$ARGUMENTS` or user message) to read from
 - Pasted text in the conversation
 
-**If a file path is provided, read it directly.** For `.docx` files, use `pandoc <file> -o /tmp/initiative-import.md` then read the markdown output. For other file types, read directly. Do NOT ask the user to paste content if they already gave you a file.
+**If a file path is provided, read it directly.** For `.docx` files, use `pandoc <file> -o /tmp/create-initiative.md` then read the markdown output. For other file types, read directly. Do NOT ask the user to paste content if they already gave you a file.
 
 If neither a file path nor pasted text is provided, ask the user:
 
@@ -131,4 +131,4 @@ If a file already exists at that path, use AskUserQuestion:
 Tell the user:
 - The file path that was created
 - "Run `/initiative-breakdown` to generate a product spec backlog from this initiative"
-- "Run `/product-spec-create` to start fleshing out individual features"
+- "Run `/create-product-spec` to start fleshing out individual features"
